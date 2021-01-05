@@ -12,15 +12,15 @@ from pandas.core.groupby import DataFrameGroupBy
 from pandas.core.window import Rolling, RollingGroupby, ExpandingGroupby
 
 import dill
-from pandarallel.data_types.dataframe import DataFrame as DF
-from pandarallel.data_types.dataframe_groupby import DataFrameGroupBy as DFGB
-from pandarallel.data_types.rolling_groupby import RollingGroupBy as RGB
-from pandarallel.data_types.expanding_groupby import ExpandingGroupBy as EGB
-from pandarallel.data_types.series import Series as S
-from pandarallel.data_types.series_rolling import SeriesRolling as SR
-from pandarallel.utils.inliner import inline
-from pandarallel.utils.progress_bars import get_progress_bars, is_notebook_lab
-from pandarallel.utils.tools import ERROR, INPUT_FILE_READ, PROGRESSION, VALUE
+from ..pandarallel.data_types.dataframe import DataFrame as DF
+from ..pandarallel.data_types.dataframe_groupby import DataFrameGroupBy as DFGB
+from ..pandarallel.data_types.rolling_groupby import RollingGroupBy as RGB
+from ..pandarallel.data_types.expanding_groupby import ExpandingGroupBy as EGB
+from ..pandarallel.data_types.series import Series as S
+from ..pandarallel.data_types.series_rolling import SeriesRolling as SR
+from ..pandarallel.utils.inliner import inline
+from ..pandarallel.utils.progress_bars import get_progress_bars, is_notebook_lab
+from ..pandarallel.utils.tools import ERROR, INPUT_FILE_READ, PROGRESSION, VALUE
 
 # Python 3.8 on MacOS by default uses "spawn" instead of "fork" as start method for new
 # processes, which is incompatible with pandarallel. We force it to use "fork" method.

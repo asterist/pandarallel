@@ -4,7 +4,7 @@ from datetime import timedelta
 import pandas as pd
 from pandas.tseries.frequencies import to_offset
 
-from pandarallel.utils.tools import chunk, PROGRESSION
+from ...pandarallel.utils.tools import chunk, PROGRESSION
 
 
 class RollingGroupBy:
